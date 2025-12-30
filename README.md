@@ -26,12 +26,5 @@ This application uses Google Drive and Docs as the knowledge base source for the
 
 2.  **Install Dependencies:**
     ```bash
-    pip install google-api-python-client google-auth-oauthlib google-auth-httplib2
+    pip -r requirements.txt
     ```
-
-### 3. First-Run Authentication
-When you run the ingestion script for the first time:
-1.  A browser window will open requesting access to your Google Drive.
-2.  Log in with the account containing your source documents.
-3.  If you see a "Google hasn't verified this app" warning, click **Advanced** > **Go to [App Name] (unsafe)** to proceed.
-4.  Once authorized, a `token.json` file will be generated locally. This token maintains access for future data indexing without requiring manual login.
